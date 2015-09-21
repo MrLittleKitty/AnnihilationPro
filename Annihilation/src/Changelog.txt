@@ -1,0 +1,106 @@
+Annihilation Pro Changelog:
+1.5.5
+-Attempted a fix for the bug that occurs in the protocol hack some times (at worst I made it not spam the console or stop the plugin from working)
+-Made it so the no permission message will show when you use the /kit command and dont have permission
+-Added "Cant select a kit" message to the language file
+-Made a default world restorer plugin.
+
+1.5.4
+-Fixed bug with NPC's
+-Fixed being able to kill an NPC of a player on your team
+-Attempted a fix of the team balancer
+-Added language config for the word "Map" in the scoreboard
+-Added language config for the nexus compass 
+
+
+1.5.3
+-Actually fixed the area bug where it wasnt checking worlds correctly
+
+1.5.2
+-Fixed armor stand bug for the protocol hack
+
+1.5.1
+-Added config setting for the amount of time after the game ends before the end game command executes
+-Fixed bug with areas where it wasnt checking the worlds correctly
+-Made armor stands unplaceable to fix a bug
+-Disabled thor because it is still in testing
+
+1.5.0
+-Added support for 1.8.1 and 1.8.3
+-Improved support for the spigot protocol hack
+-When using the spigot protocol hack, 1.7 clients will be shown the boss bar and 1.8 clients will be shown the action bar
+-THE PLUGIN NOW SUPPORTS THE FOLLOWING VERSIONS: SPIGOT PROTOCOL HACK, 1.8.1, AND 1.8.3
+-All features are working for these version. (Ender furnaces, auto respawn, anti-logging system, and boss bar)
+
+-Added an anit-logging NPC system
+-When players log out during the game an NPC will be spawned at their logout point
+-Then NPC will despawn after 20 seconds. The player will be blocked from rejoining until the NPC is either killed or despawns
+-If the NPC is killed, it will drop the player's items and the player will be sent back to base with nothing
+-If the NPC despawns, the player will be teleported back to base with all of his stuff
+
+
+-Made the scout fishing rod work better
+-Attempted to give scout the speed boost that people think is SO important...
+-Gave people who are scorpioed fall damage immunity for 8 seconds
+-Upped the cooldown for the scorpio ability from 5 seconds to 8 seconds
+-Fixed teleporter dupe glitch
+-Fixed swapper not giving slowness
+-Added settings for Areas: Hunger and Damage
+-/Area create [name] <pvp> <damage> <hunger> (options are "allow" or "disallow")
+-Updated the AnnihilationVault plugin to be equivelent to the Annihilation XP System
+-Tweaked the wording of the regenerating block prompt for the "effect" setting
+
+-For developers: Changed the Annihilation Event system to use Bukkit events. (this is cause I didnt know that you could make custom bukkit events when I made my own event system) 
+
+
+1.4.5
+-Fixed players who are in the lobby and have no team being killed when they choose a kit
+
+1.4.4
+-Fixed automatic respawns for 1.8 clients (hopefully)
+-Moved XP system to a separate module
+-Implemented default Kit Shop in the XP module
+-Added an option for the max amount of maps for voting
+-Fixed a spelling error for the word "ended"
+-Added images to be sent to all players when a nexus is destroyed
+
+1.4.3
+-Added an option in the config to disable automatic death when a player leaves the game
+-Added language config options for the compass, kit book, team join item, and vote item.
+-Hopefully stopped log spamming when people dont enable protocol hack when it is needed
+-Fixed the word "team" in team join messages. You can now translate this word in the language config file
+-Added language config for the brewing, weapon, and team signs
+
+1.4.2
+-Attempted to fix armor bug again
+-Added insta-death when logout during a game
+
+1.4.1:
+-Fixed bugs with new chat system
+-Fixed bugs with respawn and loadout system
+-Fixed bugs with voting system
+-Fixed civilian having 2 swords
+
+1.4.0:
+-Removed multiworld. The plugin should now be given its own server.
+-Changed map configs. Make sure that people change the configs to all be under the (Map) section.
+-Make sure people move their lobby over to the anni lobby config file
+-Make sure people know to turn off auto-save, because it is apparently impossible to unload a world completely
+-Added team GUI item in lobby
+-Added vote GUI item in lobby
+-Fixed ender furnaces resetting when leaving the game
+-Improved chat handling
+-Improved things for single-server
+-Improved and fixed the team balancing
+-Added customize-able XP multipliers for Vault plugin and default XP system
+-Added permission "Anni.BypassJoin" to bypass any team balancing checks
+-Added /Kit command to open the kit change GUI (Permission: "Kit")
+-Added "Assassin" Kit
+-Added "Defender" Kit
+-Added "Lumberjack" Kit
+-Added "Vampire" Kit
+-Added option "Disable" for each kit in the StarterKits Config file. This allows you to disable any kit you dont want to have. Any disabled kits will not be loaded and will not appear in the kit menu.
+-Added option "Free" for each kit in the StarterKits Config file. This allows you to make any kits available to all users. (Like Civilian) You will not need to give them any permission for them to use the kit.
+-Added config options for auto-start and auto-restart. The option is for the length of the countdown
+-Changed auto-restart so it can be aborted if the player count goes back up during the countdown period
+-Hopefully made improvements to the auto-respawn task so it runs faster and lags the server less
