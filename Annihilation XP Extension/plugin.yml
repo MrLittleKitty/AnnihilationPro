@@ -1,0 +1,12 @@
+name: AnnihilationXPSystem
+main: com.gmail.nuclearcat1337.xpSystem.main.XPMain
+version: 1.1.0
+authors: [Mr_Little_Kitty]
+depend: [Annihilation]
+description: An Annihilation XP System
+commands:
+  MyXP:
+    description: Shows the players XP
+  Shop:
+    description: Opens the Kit Shop
+permissions:

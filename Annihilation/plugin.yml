@@ -1,0 +1,34 @@
+name: Annihilation
+main: com.gmail.nuclearcat1337.anniPro.main.AnnihilationMain
+version: 1.5.5
+authors: [Mr_Little_Kitty]
+description: A plugin for playing the game of Annihilation
+commands:
+  Anni:
+    description: provides commands for the Annihilation game
+  Team:
+    description: Command related to annihilation team
+  Area:
+    description: Command for managing annihilation areas
+  Vote:
+    description: Allows players to vote for a map in annihilation
+  Kit:
+    description: Opens the kit menu for the player
+permissions:
+  A.anni:
+    description: gives permission to use the anni command
+    default: op
+  A.Area:
+    description: gives permission to use the anni command
+    default: op
+  Anni.ChangeKit:
+    description: allows a player to change their kit with a command
+    default: op
+  Anni.JoinPhase.3:
+    default: false
+  Anni.JoinPhase.4:
+    default: false
+  Anni.JoinPhase.5:
+    default: false
+  Anni.BypassJoin:
+    default: false
